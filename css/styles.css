@@ -13,25 +13,33 @@
     --modal-background-color: #FCFCFC;
 }
 
-/**Body style*/
+/** Body style */
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
     background-color: var(--white-background-color);
 }
 
-/**Style for team section*/
-.team {
-    background-color: var(--light-color);
+/** Container */
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid red;
 }
 
-/**Style for cards team section*/
-.team-item {
-    background-color: var(--white-background-color);
+/** Delete text decoration */
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-/**Delete text decoration in the main*/
-li {
+ul {
+    padding: 0;
+    margin: 0;
     list-style-type: none;
 }
 
@@ -39,7 +47,7 @@ a {
     text-decoration: none;
 }
 
-/**Logo style in the header*/
+/** Logo style in the header */
 .logo-link {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -50,17 +58,17 @@ a {
     color: var(--primary-brand-color);
 }
 
-/**Color header logo for tag span*/
+/** Color header logo for tag span */
 .header-span {
     color: var(--dark-color);
 }
 
-/**Color footer logo for tag span*/
+/** Color footer logo for tag span */
 .footer-span {
     color: var(--light-color);
 }
 
-/**Navigation style*/
+/** Navigation style */
 .nav-link {
     font-weight: 500;
     font-size: 16px;
@@ -69,12 +77,12 @@ a {
     color: var(--dark-color);
 }
 
-/**Contacts style*/
+/** Contacts style */
 .header-contacts {
     font-style: normal;
 }
 
-/**Hover and focus for header*/
+/** Hover and focus for header */
 .nav-link:hover,
 .nav-link:focus,
 .contact-link:hover,
@@ -82,31 +90,14 @@ a {
     color: var(--pressed-state-color);
 }
 
-/**Hero section*/
+/** Hero section */
 .hero {
+    text-align: center;
     background-color: var(--dark-color);
 }
 
-/**Style for button in hero section*/
-.hero-button {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    text-align: center;
-    cursor: pointer;
-    background-color: var(--primary-brand-color);
-    color: var(--white-background-color);
-}
-
-/**Hover and focus for button in hero section*/
-.hero-button:hover,
-.hero-button:focus {
-    background-color: var(--pressed-state-color);
-}
-
-/**Style for button in filter section*/
+/** Style for button */
+.hero-button,
 .filter-button {
     font-family: inherit;
     font-weight: 500;
@@ -115,19 +106,43 @@ a {
     letter-spacing: 0.04em;
     text-align: center;
     cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/** Button in hero section */
+.hero-button {
+    display: inline-block;
+    min-width: 169px;
+    min-height: 56px;
+    padding: 16px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--primary-brand-color);
+    color: var(--white-background-color);
+}
+
+/** Hover and focus for button in hero section */
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--pressed-state-color);
+}
+
+/** Button in filter section */
+.filter-button {
     background-color: var(--light-color);
     color: var(--primary-brand-color);
 }
 
-/**Hover and focus for button in filter section*/
+/** Hover and focus for button in filter section */
 .filter-button:hover,
 .filter-button:focus {
     background-color: var(--pressed-state-color);
     color: var(--white-background-color);
 }
 
-/**Header 1*/
+/** Header 1 */
 .hero-title {
+    margin-bottom: 48px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -136,7 +151,17 @@ a {
     color: var(--white-background-color);
 }
 
-/**Header 2*/
+/** Style for team section */
+.team {
+    background-color: var(--light-color);
+}
+
+/** Style for cards team section */
+.team-item {
+    background-color: var(--white-background-color);
+}
+
+/** Header 2 */
 .features-title,
 .work-title,
 .team-title {
@@ -149,7 +174,7 @@ a {
     color: var(--dark-color);
 }
 
-/**Header 3*/
+/** Header 3 */
 .features-subtitle,
 .team-name,
 .category-name {
@@ -160,7 +185,7 @@ a {
     color: var(--dark-color);
 }
 
-/**Body text style*/
+/** Body text style */
 .contact-link,
 .text,
 .footer-slogan {
@@ -170,12 +195,12 @@ a {
     color: var(--text-color);
 }
 
-/**Footer style*/
+/** Footer style */
 .footer {
     background-color: var(--dark-color);
 }
 
-/**Footer slogan*/
+/** Footer slogan */
 .footer-slogan {
     color: var(--light-color);
 }
