@@ -50,9 +50,18 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+}
+
+/** Additional class for sections  */
+.section {
+    padding: 120px 0;
+}
+
 /** Style for header */
 header {
-    padding: 24px;
+    padding: 24px 0;
 }
 
 /** Logo style in the header */
@@ -85,11 +94,6 @@ header {
     color: var(--dark-color);
 }
 
-/** Contacts style */
-.header-contacts {
-    font-style: normal;
-}
-
 /** Hover and focus for header */
 .nav-link:hover,
 .nav-link:focus,
@@ -101,7 +105,23 @@ header {
 /** Hero section */
 .hero {
     text-align: center;
+    padding: 188px 0;
     background-color: var(--dark-color);
+}
+
+/** Work section */
+.work {
+    padding-top: 0;
+}
+
+/** Team section */
+.team {
+    background-color: var(--light-color);
+}
+
+/** Style for cards in team section */
+.team-item {
+    background-color: var(--white-background-color);
 }
 
 /** Style for button */
@@ -154,24 +174,14 @@ button {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
     color: var(--white-background-color);
-}
-
-/** Style for team section */
-.team {
-    background-color: var(--light-color);
-}
-
-/** Style for cards team section */
-.team-item {
-    background-color: var(--white-background-color);
 }
 
 /** Header 2 */
 .features-title,
 .work-title,
 .team-title {
+    margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -182,9 +192,10 @@ button {
 }
 
 /** Header 3 */
-.features-subtitle,
+.features-name,
 .team-name,
 .category-name {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -204,7 +215,14 @@ button {
 
 /** Footer style */
 .footer {
+    padding: 100px 0;
     background-color: var(--dark-color);
+}
+
+/** Footer logo */
+.footer .logo-link {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 /** Footer slogan */
