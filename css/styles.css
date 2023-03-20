@@ -24,17 +24,19 @@ body {
 .container {
     width: 1158px;
     padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     outline: 2px solid red;
 }
 
 /** Delete text decoration */
 h1,
 h2,
-h3 {
-    margin-top: 0;
-    margin-bottom: 0;
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
 }
 
 ul {
@@ -44,7 +46,13 @@ ul {
 }
 
 a {
+    font-style: normal;
     text-decoration: none;
+}
+
+/** Style for header */
+header {
+    padding: 24px;
 }
 
 /** Logo style in the header */
@@ -97,8 +105,7 @@ a {
 }
 
 /** Style for button */
-.hero-button,
-.filter-button {
+button {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
