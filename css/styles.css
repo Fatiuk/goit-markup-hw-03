@@ -22,9 +22,11 @@ body {
 
 /** Container */
 .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
     width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
     outline: 2px solid red;
 }
 
@@ -56,12 +58,15 @@ img {
 
 /** Additional class for sections  */
 .section {
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 /** Style for header */
 header {
-    padding: 24px 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--accent-color);
 }
 
 /** Logo style in the header */
@@ -75,6 +80,10 @@ header {
     color: var(--primary-brand-color);
 }
 
+.header .logo-link {
+    margin-right: 76px;
+}
+
 /** Color header logo for tag span */
 .header-span {
     color: var(--dark-color);
@@ -86,12 +95,48 @@ header {
 }
 
 /** Navigation style */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item:not(:last-child):not(:last-child) {
+    margin-right: 40px;
+}
+
 .nav-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--dark-color);
+}
+
+/** Contacts style */
+.contacts-list {
+    display: flex;
+}
+
+.contact-item:not(:last-child):not(:last-child) {
+    margin-right: 40px;
+}
+
+.contact-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 /** Hover and focus for header */
@@ -104,9 +149,22 @@ header {
 
 /** Hero section */
 .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
     text-align: center;
-    padding: 188px 0;
     background-color: var(--dark-color);
+}
+
+/*! Features section */
+.features-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.features-item {
+    display: block;
+    max-width: 264px;
 }
 
 /** Work section */
@@ -131,7 +189,6 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    text-align: center;
     cursor: pointer;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -140,9 +197,10 @@ button {
 /** Button in hero section */
 .hero-button {
     display: inline-block;
+    padding: 16px 32px;
+
     min-width: 169px;
     min-height: 56px;
-    padding: 16px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: var(--primary-brand-color);
     color: var(--white-background-color);
@@ -170,6 +228,7 @@ button {
 /** Header 1 */
 .hero-title {
     margin-bottom: 48px;
+
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -182,6 +241,7 @@ button {
 .work-title,
 .team-title {
     margin-bottom: 72px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -196,6 +256,7 @@ button {
 .team-name,
 .category-name {
     margin-bottom: 8px;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -215,7 +276,8 @@ button {
 
 /** Footer style */
 .footer {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: var(--dark-color);
 }
 
@@ -227,5 +289,6 @@ button {
 
 /** Footer slogan */
 .footer-slogan {
+    max-width: 264px;
     color: var(--light-color);
 }
