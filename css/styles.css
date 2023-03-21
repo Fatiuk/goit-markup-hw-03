@@ -27,7 +27,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 1158px;
-    outline: 2px solid red;
 }
 
 /** Delete text decoration */
@@ -224,12 +223,68 @@ header {
     background-color: var(--white-background-color);
 }
 
+/** Margin for cards in team section */
 .team-name {
     padding-top: 32px;
 }
 
 .team-text {
     padding-bottom: 32px;
+}
+
+/** Filter section */
+.filter {
+    padding-top: 96px;
+}
+
+.filter-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
+.filter-item:not(:last-child) {
+    margin-right: 24px;
+}
+
+/** Style for cards in category */
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.category-item {
+    display: flex;
+    justify-content: center;
+    flex-basis: calc((100% - 360px) / 3);
+
+    border: 1px solid var(--accent-color);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.category-item {
+    margin-bottom: 48px;
+}
+
+.category-item:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.category-item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+}
+
+.category-name {
+    padding-top: 32px;
+    margin-left: 16px;
+    margin-right: auto;
+}
+
+.category-text {
+    padding-bottom: 32px;
+    margin-left: 16px;
+    margin-right: auto;
 }
 
 /** Style for button */
@@ -264,6 +319,9 @@ button {
 
 /** Button in filter section */
 .filter-button {
+    display: inline-block;
+    padding: 12px 24px;
+
     background-color: var(--light-color);
     color: var(--primary-brand-color);
 }
