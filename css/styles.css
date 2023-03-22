@@ -119,10 +119,7 @@ header {
 
 .nav-list {
     display: flex;
-}
-
-.nav-item:not(:last-child) {
-    margin-right: 40px;
+    gap: 40px;
 }
 
 .nav-link {
@@ -140,10 +137,7 @@ header {
 /** Contacts style */
 .contacts-list {
     display: flex;
-}
-
-.contact-item:not(:last-child) {
-    margin-right: 40px;
+    gap: 40px;
 }
 
 .contact-link {
@@ -229,10 +223,7 @@ header {
     display: flex;
     justify-content: center;
     margin-bottom: 72px;
-}
-
-.filter-item:not(:last-child) {
-    margin-right: 24px;
+    gap: 24px;
 }
 
 /** Style for cards in category */
