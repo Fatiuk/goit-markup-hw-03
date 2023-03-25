@@ -200,6 +200,8 @@ header {
 }
 
 .team-item {
+    height: 100%;
+    flex-grow: 1;
     text-align: center;
     flex-basis: calc((100% - 72px)/4);
 
@@ -238,7 +240,14 @@ header {
     border-radius: 0px 0px 4px 4px;
 }
 
+.category-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .category-card {
+    flex-grow: 1;
     padding-top: 32px;
     padding-right: auto;
     padding-bottom: 32px;
